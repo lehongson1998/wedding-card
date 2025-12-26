@@ -38,6 +38,9 @@
   </head>
   <body>
     <div class="container">
+      <audio id="bg-music" src="MMBN.mp3" loop></audio>
+
+      <div id="overlay">Chạm để bật nhạc 🎵</div>
       <div class="title">Hồng Sơn & Thuỳ Vân</div>
       <img src="images/image_2.png" alt="" class="spolight" />
       <div class="image-wraper">
@@ -61,16 +64,16 @@
         </div>
         <div class="album-content">
           <div class="album-item">
-            <img src="images/image_3.jpg" alt="" class="album-image" />
+            <img src="images/image_3.jpg" alt="" class="album-image reval" />
           </div>
           <div class="album-item">
-            <img src="images/image_4.jpg" alt="" class="album-image" />
+            <img src="images/image_4.jpg" alt="" class="album-image reval" />
           </div>
           <div class="album-item">
-            <img src="images/image_6.jpg" alt="" class="album-image" />
+            <img src="images/image_6.jpg" alt="" class="album-image reval" />
           </div>
           <div class="album-item">
-            <img src="images/image_8.jpg" alt="" class="album-image" />
+            <img src="images/image_8.jpg" alt="" class="album-image reval" />
           </div>
         </div>
       </div>
@@ -133,7 +136,7 @@
         <p class="at-date">(Tức ngày 10/12 Ất Tỵ)</p>
       </div>
 
-      <div class="album">
+      <div class="album album2">
         <div class="album-header">
           <img
             src="images/image_1.png"
@@ -249,6 +252,45 @@
 
       updateCountdown();
       const timer = setInterval(updateCountdown, 1000);
+    </script>
+    <script>
+      const reveals = document.querySelectorAll(".reval");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("active");
+              observer.unobserve(entry.target); // chỉ chạy 1 lần
+            }
+          });
+        },
+        {
+          threshold: 0.2, // 20% ảnh xuất hiện thì trigger
+        }
+      );
+
+      reveals.forEach((el) => observer.observe(el));
+    </script>
+    <script>
+      window.addEventListener("load", () => {
+        const music = document.getElementById("bg-music");
+        music.volume = 0.5;
+
+        music.play().catch(() => {
+          console.log("Autoplay bị chặn");
+        });
+      });
+    </script>
+
+    <script>
+      const overlay = document.getElementById("overlay");
+      const music = document.getElementById("bg-music");
+
+      overlay.addEventListener("click", () => {
+        music.play();
+        overlay.remove();
+      });
     </script>
   </body>
 </html>
