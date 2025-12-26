@@ -198,3 +198,30 @@
   background-color: #e1c491;
   border-radius: 8px;
 }
+
+.wedding-footer {
+  width: 60%;
+}
+
+.thank-you {
+  font-size: 3rem;
+  font-family: "Pattaya", cursive;
+}
+
+.happy {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+}
+
+.qr-title {
+  font-size: 2rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+.qr-img {
+  width: 50%;
+  margin-top: 1rem;
+  border-radius: 12px;
+}
