@@ -37,186 +37,212 @@
     <title>HTML CSS</title>
   </head>
   <body>
-    <div class="container">
-      <audio id="bg-music" src="MMBN.mp3" loop></audio>
-      <button id="music-btn" class="music-btn">
-        <i class="fa-solid fa-volume-xmark"></i>
-      </button>
+    <!-- INTRO THIỆP -->
+    <div class="intro" id="intro">
+      <canvas id="snow"></canvas>
+      <div class="intro-card">
+        <div class="intro-heart">❤</div>
+        <h2>Hồng Sơn & Thuỳ Vân</h2>
+        <p>Thân mời</p>
+        <button id="open-invite">
+          <i class="fa-solid fa-envelope-open"></i>
+          Mở thiệp
+        </button>
+      </div>
+    </div>
+    <audio id="bg-music" src="MMBN.mp3" loop></audio>
+    <button id="music-btn" class="music-btn">
+      <i class="fa-solid fa-volume-xmark"></i>
+    </button>
 
-      <!-- <div id="overlay">Chạm để bật nhạc 🎵</div> -->
-      <div class="title">Hồng Sơn & Thuỳ Vân</div>
-      <img src="images/image_2.png" alt="" class="spolight" />
-      <div class="image-wraper">
-        <img src="images/image_5.png" alt="" class="img-base" />
-        <img src="images/image_7.png" alt="" class="img-overlay" />
+    <div class="main-content" id="main">
+      <canvas id="sakura"></canvas>
+      <div class="container">
+        <!-- <div id="overlay">Chạm để bật nhạc 🎵</div> -->
+        <div class="title">Hồng Sơn & Thuỳ Vân</div>
+        <img src="images/image_2.png" alt="" class="spolight" />
+        <div class="image-wraper">
+          <img src="images/image_5.png" alt="" class="img-base" />
+          <img src="images/image_7.png" alt="" class="img-overlay" />
+        </div>
+
+        <div class="album">
+          <div class="album-header">
+            <img
+              src="images/image_1.png"
+              alt=""
+              class="album-header-left album-icon"
+            />
+            <span class="album-title">ALBUM ẢNH CƯỚI</span>
+            <img
+              src="images/image_1.png"
+              alt=""
+              class="album-header-right album-icon"
+            />
+          </div>
+          <div class="album-content">
+            <div class="album-item">
+              <img src="images/KL407750.jpg" alt="" class="album-image reval" />
+            </div>
+            <div class="album-item">
+              <img src="images/KL407944.jpg" alt="" class="album-image reval" />
+            </div>
+            <div class="album-item">
+              <img src="images/KL408107.jpg" alt="" class="album-image reval" />
+            </div>
+            <div class="album-item">
+              <img src="images/KL408051.jpg" alt="" class="album-image reval" />
+            </div>
+          </div>
+        </div>
+
+        <div class="album">
+          <div class="album-header">
+            <img
+              src="images/image_1.png"
+              alt=""
+              class="album-header-left album-icon"
+            />
+            <span class="album-title">THÔNG TIN LỄ CƯỚI</span>
+            <img
+              src="images/image_1.png"
+              alt=""
+              class="album-header-right album-icon"
+            />
+          </div>
+          <div class="info-wedding">
+            <div class="info-item">
+              <p>Ông Bà</p>
+              <h3>Lê Văn Cầu</h3>
+              <h3>Nguyễn Thị Trần</h3>
+              <p>Xóm Hưng Yên Nam 5, Yên Trung, Nghệ An</p>
+            </div>
+
+            <span class="division"></span>
+
+            <div class="info-item">
+              <p>Ông Bà</p>
+              <h3>Trần Văn Quyền</h3>
+              <h3>Hoàng Thị Sỹ</h3>
+              <p>Xóm Hưng Yên Nam 5, Yên Trung, Nghệ An</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="time-wedding">
+          <p class="time-wedding-header">TRÂN TRỌNG KÍNH MỜI DỰ</p>
+          <p class="time-wedding-header">LỄ THÀNH HÔN CỦA CON CHÚNG TÔI</p>
+          <h2 class="human">Lê Hồng Sơn</h2>
+          <p class="human-posi">Trưởng Nam</p>
+          <span class="and">&amp;</span>
+          <h2 class="human">Trần Thị Vân</h2>
+          <p class="human-posi">Thứ Nữ</p>
+          <p class="time-char">HÔN LỄ ĐƯỢC CỬ HÀNH TẠI</p>
+          <h3 class="time-place">TƯ GIA NHÀ TRAI</h3>
+          <p class="time-detail-text">VÀO LÚC</p>
+          <h3 class="time-hour">10:30</h3>
+
+          <div class="time-desc">
+            <p class="time-week">THỨ TƯ</p>
+            <span class="division2"></span>
+            <p class="time-day">28</p>
+            <span class="division2"></span>
+            <p class="time-month">THÁNG 01</p>
+          </div>
+
+          <p class="time-year">NĂM 2026</p>
+          <p class="at-date">(Tức ngày 10/12 Ất Tỵ)</p>
+        </div>
+
+        <div class="album album2">
+          <div class="album-header">
+            <img
+              src="images/image_1.png"
+              alt=""
+              class="album-header-left album-icon"
+            />
+            <span class="album-title">THÔNG TIN TIỆC CƯỚI</span>
+            <img
+              src="images/image_1.png"
+              alt=""
+              class="album-header-right album-icon"
+            />
+          </div>
+          <p class="time-wedding-header-secondary">
+            TIỆC CƯỚI SẼ DIỄN RA VÀO LÚC:
+          </p>
+          <h3>09:00</h3>
+
+          <div class="time-desc">
+            <p class="time-week">THỨ BA</p>
+            <span class="division2"></span>
+            <p class="time-day">27</p>
+            <span class="division2"></span>
+            <p class="time-month">THÁNG 01</p>
+          </div>
+
+          <p class="time-year">NĂM 2026</p>
+
+          <h2 class="count-title">ĐỒNG HỒ ĐẾM NGƯỢC</h2>
+          <div class="countdown">
+            <div class="time">
+              <span id="days">00</span>
+              <small>NGÀY</small>
+            </div>
+            <div class="time">
+              <span id="hours">00</span>
+              <small>GIỜ</small>
+            </div>
+            <div class="time">
+              <span id="minutes">00</span>
+              <small>PHÚT</small>
+            </div>
+            <div class="time">
+              <span id="seconds">00</span>
+              <small>GIÂY</small>
+            </div>
+          </div>
+
+          <h3 class="info-map">TIỆC CƯỚI SẼ TỔ CHỨC TẠI</h3>
+          <p class="info-map-place">Tư Gia Nhà Gái</p>
+
+          <img
+            src="images/image_7.png"
+            alt="wedding-footer"
+            class="wedding-footer"
+          />
+
+          <p class="thank-you">
+            Gia đình xin chân thành cảm ơn Quý Khách đã đến chung vui
+          </p>
+
+          <h3 class="happy">Quét mã để gửi mừng cưới</h3>
+
+          <p class="qr-title">Chú Rể</p>
+          <img src="images/QRSON.png" alt="sonQR" class="qr-img" />
+          <p class="bank-name">Vietcombank</p>
+          <p class="bank-number">1033190510</p>
+          <p class="bank-holder">LÊ HỒNG SƠN</p>
+
+          <p class="qr-title">Cô Dâu</p>
+          <img src="images/QRSON.png" alt="sonQR" class="qr-img" />
+          <p class="bank-name">Vietcombank</p>
+          <p class="bank-number">1040238259</p>
+          <p class="bank-holder">Trần Thị Vân</p>
+
+          <p class="thank-you2">Thank You!</p>
+        </div>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox">
+      <button class="lb-btn prev">❮</button>
+
+      <div class="lb-image-wrapper">
+        <img id="lightbox-img" />
       </div>
 
-      <div class="album">
-        <div class="album-header">
-          <img
-            src="images/image_1.png"
-            alt=""
-            class="album-header-left album-icon"
-          />
-          <span class="album-title">ALBUM ẢNH CƯỚI</span>
-          <img
-            src="images/image_1.png"
-            alt=""
-            class="album-header-right album-icon"
-          />
-        </div>
-        <div class="album-content">
-          <div class="album-item">
-            <img src="images/image_3.jpg" alt="" class="album-image reval" />
-          </div>
-          <div class="album-item">
-            <img src="images/image_4.jpg" alt="" class="album-image reval" />
-          </div>
-          <div class="album-item">
-            <img src="images/image_6.jpg" alt="" class="album-image reval" />
-          </div>
-          <div class="album-item">
-            <img src="images/image_8.jpg" alt="" class="album-image reval" />
-          </div>
-        </div>
-      </div>
-
-      <div class="album">
-        <div class="album-header">
-          <img
-            src="images/image_1.png"
-            alt=""
-            class="album-header-left album-icon"
-          />
-          <span class="album-title">THÔNG TIN LỄ CƯỚI</span>
-          <img
-            src="images/image_1.png"
-            alt=""
-            class="album-header-right album-icon"
-          />
-        </div>
-        <div class="info-wedding">
-          <div class="info-item">
-            <p>Ông Bà</p>
-            <h3>Lê Văn Cầu</h3>
-            <h3>Nguyễn Thị Trần</h3>
-            <p>Xóm Hưng Yên Nam 5, Yên Trung, Nghệ An</p>
-          </div>
-
-          <span class="division"></span>
-
-          <div class="info-item">
-            <p>Ông Bà</p>
-            <h3>Trần Văn Quyền</h3>
-            <h3>Hoàng Thị Sỹ</h3>
-            <p>Xóm Hưng Yên Nam 5, Yên Trung, Nghệ An</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="time-wedding">
-        <p class="time-wedding-header">TRÂN TRỌNG BÁO TIN</p>
-        <p class="time-wedding-header">LỄ THÀNH HÔN CỦA CON CHÚNG TÔI</p>
-        <h2 class="human">Lê Hồng Sơn</h2>
-        <p class="human-posi">Trưởng Nam</p>
-        <span class="and">&amp;</span>
-        <h2 class="human">Trần Thị Vân</h2>
-        <p class="human-posi">Thứ Nữ</p>
-        <p class="time-char">HÔN LỄ ĐƯỢC CỬ HÀNH TẠI</p>
-        <h3 class="time-place">TƯ GIA NHÀ TRAI</h3>
-        <p class="time-detail-text">VÀO LÚC</p>
-        <h3 class="time-hour">10:30</h3>
-
-        <div class="time-desc">
-          <p class="time-week">THỨ TƯ</p>
-          <span class="division2"></span>
-          <p class="time-day">28</p>
-          <span class="division2"></span>
-          <p class="time-month">THÁNG 01</p>
-        </div>
-
-        <p class="time-year">NĂM 2026</p>
-        <p class="at-date">(Tức ngày 10/12 Ất Tỵ)</p>
-      </div>
-
-      <div class="album album2">
-        <div class="album-header">
-          <img
-            src="images/image_1.png"
-            alt=""
-            class="album-header-left album-icon"
-          />
-          <span class="album-title">THÔNG TIN TIỆC CƯỚI</span>
-          <img
-            src="images/image_1.png"
-            alt=""
-            class="album-header-right album-icon"
-          />
-        </div>
-        <p class="time-wedding-header-secondary">
-          TIỆC CƯỚI SẼ DIỄN RA VÀO LÚC:
-        </p>
-        <h3>09:00</h3>
-
-        <div class="time-desc">
-          <p class="time-week">THỨ BA</p>
-          <span class="division2"></span>
-          <p class="time-day">27</p>
-          <span class="division2"></span>
-          <p class="time-month">THÁNG 01</p>
-        </div>
-
-        <p class="time-year">NĂM 2026</p>
-
-        <h2 class="count-title">ĐỒNG HỒ ĐẾM NGƯỢC</h2>
-        <div class="countdown">
-          <div class="time">
-            <span id="days">00</span>
-            <small>NGÀY</small>
-          </div>
-          <div class="time">
-            <span id="hours">00</span>
-            <small>GIỜ</small>
-          </div>
-          <div class="time">
-            <span id="minutes">00</span>
-            <small>PHÚT</small>
-          </div>
-          <div class="time">
-            <span id="seconds">00</span>
-            <small>GIÂY</small>
-          </div>
-        </div>
-
-        <h3 class="info-map">TIỆC CƯỚI SẼ TỔ CHỨC TẠI</h3>
-        <p class="info-map-place">Tư Gia Nhà Gái</p>
-
-        <img
-          src="images/image_7.png"
-          alt="wedding-footer"
-          class="wedding-footer"
-        />
-
-        <p class="thank-you">
-          Gia đình xin chân thành cảm ơn Quý Khách đã đến chung vui
-        </p>
-
-        <h3 class="happy">Quét mã để gửi mừng cưới</h3>
-
-        <p class="qr-title">Chú Rể</p>
-        <img src="images/QRSON.png" alt="sonQR" class="qr-img" />
-        <p class="bank-name">Vietcombank</p>
-        <p class="bank-number">1033190510</p>
-        <p class="bank-holder">LÊ HỒNG SƠN</p>
-
-        <p class="qr-title">Cô Dâu</p>
-        <img src="images/QRSON.png" alt="sonQR" class="qr-img" />
-        <p class="bank-name">Vietcombank</p>
-        <p class="bank-number">1040238259</p>
-        <p class="bank-holder">Trần Thị Vân</p>
-
-        <p class="thank-you2">Thank You!</p>
-      </div>
+      <button class="lb-btn next">❯</button>
+      <span class="lightbox-close">&times;</span>
     </div>
 
     <script>
@@ -286,7 +312,7 @@
       });
     </script>
 
-    <script>
+    <!-- <script>
       const overlay = document.getElementById("overlay");
       const music = document.getElementById("bg-music");
 
@@ -294,7 +320,7 @@
         music.play();
         overlay.remove();
       });
-    </script>
+    </script> -->
     <script>
       const music1 = document.getElementById("bg-music");
       const btn = document.getElementById("music-btn");
@@ -310,6 +336,253 @@
           btn.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
         }
         isPlaying = !isPlaying;
+      });
+    </script>
+
+    <script>
+      const images = [...document.querySelectorAll(".album-image")];
+      const lightbox = document.getElementById("lightbox");
+      const img = document.getElementById("lightbox-img");
+      const closeBtn = document.querySelector(".lightbox-close");
+      const nextBtn = document.querySelector(".next");
+      const prevBtn = document.querySelector(".prev");
+
+      let currentIndex = 0;
+      let scale = 1;
+      let startDist = 0;
+
+      function openLightbox(index) {
+        currentIndex = index;
+        img.src = images[index].src;
+        scale = 1;
+        img.style.transform = "scale(1)";
+        lightbox.classList.add("show");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeLightbox() {
+        lightbox.classList.remove("show");
+        document.body.style.overflow = "";
+      }
+
+      function showNext() {
+        currentIndex = (currentIndex + 1) % images.length;
+        img.src = images[currentIndex].src;
+        resetZoom();
+      }
+
+      function showPrev() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        img.src = images[currentIndex].src;
+        resetZoom();
+      }
+
+      function resetZoom() {
+        scale = 1;
+        img.style.transform = "scale(1)";
+      }
+
+      images.forEach((el, i) =>
+        el.addEventListener("click", () => openLightbox(i))
+      );
+
+      closeBtn.onclick = closeLightbox;
+      nextBtn.onclick = showNext;
+      prevBtn.onclick = showPrev;
+
+      /* click nền */
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+
+      /* ===== PINCH ZOOM (mobile) ===== */
+      img.addEventListener("touchstart", (e) => {
+        if (e.touches.length === 2) {
+          startDist = getDistance(e.touches[0], e.touches[1]);
+        }
+      });
+
+      img.addEventListener("touchmove", (e) => {
+        if (e.touches.length === 2) {
+          const newDist = getDistance(e.touches[0], e.touches[1]);
+          scale = Math.min(Math.max(scale * (newDist / startDist), 1), 3);
+          img.style.transform = `scale(${scale})`;
+          startDist = newDist;
+        }
+      });
+
+      function getDistance(t1, t2) {
+        return Math.hypot(t1.clientX - t2.clientX, t1.clientY - t2.clientY);
+      }
+
+      /* keyboard desktop */
+      document.addEventListener("keydown", (e) => {
+        if (!lightbox.classList.contains("show")) return;
+        if (e.key === "ArrowRight") showNext();
+        if (e.key === "ArrowLeft") showPrev();
+        if (e.key === "Escape") closeLightbox();
+      });
+    </script>
+
+    <script>
+      const openBtn = document.getElementById("open-invite");
+      const intro = document.getElementById("intro");
+      const main = document.getElementById("main");
+      const music = document.getElementById("bg-music");
+
+      openBtn.addEventListener("click", () => {
+        intro.style.opacity = "0";
+
+        setTimeout(() => {
+          intro.style.display = "none";
+          main.style.display = "block";
+
+          // bật nhạc sau user interaction (không bị chặn)
+          music.volume = 0.5;
+          music.play();
+        }, 500);
+      });
+    </script>
+
+    <script>
+      const canvas = document.getElementById("snow");
+      const ctx = canvas.getContext("2d");
+
+      let width, height;
+      let snowflakes = [];
+
+      function resize() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+      }
+
+      window.addEventListener("resize", resize);
+      resize();
+
+      function createSnowflakes() {
+        snowflakes = [];
+        for (let i = 0; i < 120; i++) {
+          snowflakes.push({
+            x: Math.random() * width,
+            y: Math.random() * height,
+            r: Math.random() * 3 + 1,
+            d: Math.random() + 0.5,
+          });
+        }
+      }
+
+      function drawSnow() {
+        ctx.clearRect(0, 0, width, height);
+        ctx.fillStyle = "rgba(255,255,255,0.8)";
+        ctx.beginPath();
+
+        for (let i = 0; i < snowflakes.length; i++) {
+          const f = snowflakes[i];
+          ctx.moveTo(f.x, f.y);
+          ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2, true);
+        }
+
+        ctx.fill();
+        moveSnow();
+      }
+
+      let angle = 0;
+
+      function moveSnow() {
+        angle += 0.01;
+        for (let i = 0; i < snowflakes.length; i++) {
+          const f = snowflakes[i];
+          f.y += Math.pow(f.d, 2) + 0.5;
+          f.x += Math.sin(angle) * 0.5;
+
+          if (f.y > height) {
+            snowflakes[i] = {
+              x: Math.random() * width,
+              y: 0,
+              r: f.r,
+              d: f.d,
+            };
+          }
+        }
+      }
+
+      createSnowflakes();
+      const snowTimer = setInterval(drawSnow, 30);
+
+      // 🔴 TẮT TUYẾT KHI MỞ THIỆP
+      document.getElementById("open-invite").addEventListener("click", () => {
+        clearInterval(snowTimer);
+        canvas.remove();
+      });
+    </script>
+
+    <script>
+      const sakuraCanvas = document.getElementById("sakura");
+      const sCtx = sakuraCanvas.getContext("2d");
+
+      let sw, sh;
+      let petals = [];
+      let sakuraTimer;
+
+      function resizeSakura() {
+        sw = sakuraCanvas.width = window.innerWidth;
+        sh = sakuraCanvas.height = window.innerHeight;
+      }
+
+      window.addEventListener("resize", resizeSakura);
+      resizeSakura();
+
+      function createPetals() {
+        petals = [];
+        for (let i = 0; i < 40; i++) {
+          petals.push({
+            x: Math.random() * sw,
+            y: Math.random() * sh,
+            r: Math.random() * 6 + 4,
+            speedY: Math.random() * 1 + 0.5,
+            speedX: Math.random() * 0.5 - 0.25,
+            rot: Math.random() * Math.PI,
+            rotSpeed: Math.random() * 0.02 - 0.01,
+          });
+        }
+      }
+
+      function drawPetals() {
+        sCtx.clearRect(0, 0, sw, sh);
+
+        petals.forEach((p) => {
+          sCtx.save();
+          sCtx.translate(p.x, p.y);
+          sCtx.rotate(p.rot);
+
+          sCtx.fillStyle = "rgba(255,182,193,0.85)";
+          sCtx.beginPath();
+          sCtx.moveTo(0, 0);
+          sCtx.quadraticCurveTo(p.r, -p.r, p.r * 2, 0);
+          sCtx.quadraticCurveTo(p.r, p.r, 0, 0);
+          sCtx.fill();
+
+          sCtx.restore();
+
+          p.y += p.speedY;
+          p.x += p.speedX;
+          p.rot += p.rotSpeed;
+
+          if (p.y > sh || p.x < -50 || p.x > sw + 50) {
+            p.y = -20;
+            p.x = Math.random() * sw;
+          }
+        });
+      }
+
+      function startSakura() {
+        createPetals();
+        sakuraTimer = setInterval(drawPetals, 30);
+      }
+
+      // 🌸 CHẠY HOA ĐÀO KHI MỞ THIỆP
+      document.getElementById("open-invite").addEventListener("click", () => {
+        setTimeout(startSakura, 800); // đợi intro fade xong
       });
     </script>
   </body>
